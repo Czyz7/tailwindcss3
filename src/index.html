@@ -16,8 +16,21 @@
         <div class="shadow-2xl h-16 w-full bg-white border border-black rounded-lg"></div>
     </div>
 
-    <div class="flex-auto w-screen flex flex-col items-center justify-center">
-  <h1 class="text-4xl font-extrabold mb-2 tracking-tight text-indigo-500">Pilgrimage of Ages: Neo Tula Cast</h1>
+    <!-- Hover -->
+    <main class="flex w-screen h-screen  flex-col items-center justify-center">
+      <button class="hover:ring-2 hover:ring-offset-2 hover:ring-rose-600 hover:bg-emerald-500 my-2 py-2 px-2 border border-transparent shadow-sm font-bold rounded-md text-white bg-fuchsia-600" type="submit">hover</button>
+    </main>
+  <!-- Focus -->
+    <main class="flex w-screen h-screen flex-col items-center justify-center">
+      <button class="focus:ring-2 focus:ring-offset-2 focus:ring-sky-600 my-2 py-2 px-2 border border-transparent shadow-sm font-bold rounded-md text-white bg-sky-600" type="submit">focus</button>
+      <div class="focus-within:bg-red-300 w-full flex items-center justify-center">
+        <button type="submit" class="my-2 py-2 px-2 border border-transparent shadow-sm font-bold rounded-md text-white bg-sky-600">focus-within</button>
+      </div>
+      <button type="submit" class="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-orange-600 w my-2 py-2 px-2 border border-transparent shadow-sm font-bold rounded-md text-white bg-sky-600">focus-visible</button>
+    </main>
+
+    <div class=" flex-row w-screen flex flex-shrink-0 items-center justify-center">
+  <h1 class="text-5xl font-extrabold mb-2 -tracking-normal text-indigo-500">Pilgrimage of Ages: <br>Neo Tula Characters</h1>
       <div class="ring-offset-1 ring-red-600 ring-4 bg-black text-white text-center rounded-md p-2 my-4" x-text="item.name">Arcxa</div>
       <div class="ring-offset-1 ring-blue-600 ring-4 bg-black text-white text-center rounded-md p-2 my-4" x-text="item.name">Aravant</div>
       <div class="ring-offset-1 ring-amber-300 ring-4 bg-black text-white text-center rounded-md p-2 my-4" x-text="item.name">Amdor</div>
@@ -36,6 +49,134 @@
     
   </div>
 </div>
+
+<header class="fixed top-0 w-screen bg-white z-50">
+  <div class="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+    <div class="justify-start lg:w-0 flex-1">
+      <a href="#"><img class="h-16 py-2 w-auto" src="https://i.postimg.cc/28VNg4wB/olnori.png" alt="Olnori"></a>
+    </div>
+    <nav class="flex space-x-6">
+      <a href="#meet" class="active:text-indigo-600 border-t-4 border-transparent hover:border-pink-500 font-bold text-gray-500 uppercase">About</a>
+      <a href="#interact" class="active:text-indigo-600 border-t-4 border-transparent hover:border-orange-500 font-bold text-gray-500 uppercase">Art</a>
+      <a href="#cast" class="active:text-indigo-600 border-t-4 border-transparent hover:border-green-600 font-bold text-gray-500 uppercase">Shop</a>
+      <a href="#social" class="active:text-indigo-600 border-t-4 border-transparent hover:border-yellow-300 font-bold text-gray-500 uppercase">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div id="meet" class="target:pt-16">
+  <div class="mt-16 max-w-5xl mx-auto sm:px-6 lg:px-8 relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+    <div class="absolute inset-0">
+      <img class="h-full w-full object-cover" src="https://i.postimg.cc/YqqQ7SGF/f9589bca-2377-4d72-add1-b2cf216b5cdb.jpg" alt="Twin-Snake Staff">
+      <div class="absolute inset-0 bg-cyan-900 mix-blend-multiply"></div>
+    </div>
+    <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-24 lg:px-8">
+      <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+        <span class="block text-white">Pilgrimage of Ages:</span>
+        <span class="block text-cyan-400 text-8xl">Neo Tula</span>
+      </h1>
+      <p class="mt-6 max-w-lg mx-auto text-center text-xl text-white sm:max-w-3xl">An Adventure/Fantasy novel set 1000 years in our alternate future. Featuring a hard magic system, crystal technology and over 100 original elemental commands!</p>
+      <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+        <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-cyan-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="interact" class="max-w-7xl mx-auto py-16">
+  <h2 class="text-center font-semibold tracking-wider text-indigo-600 uppercase">Enter the Pilgrimage in Neo Tula</h2>
+  <div class="grid px-5 py-6 sm:p-8 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+      <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-pink-600 text-white sm:h-12 sm:w-12">
+        <i class="bi bi-controller"></i>
+      </div>
+      <div class="ml-4 flex flex-col">
+        <p class="text-base font-medium text-gray-900">About</p>
+        <p class="mt-1 text-sm text-gray-500"> A breif overview of the story. You can even read the prologue for free! </p>
+      </div>
+    </a>
+
+    <a href="#" class="p-3 flex items-start rounded-lg hover:bg-gray-50">
+      <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-orange-500 text-white sm:h-12 sm:w-12">
+        <i class="bi bi-chat"></i>
+      </div>
+      <div class="ml-4 flex flex-col">
+        <p class="text-base font-medium text-gray-900">Art</p>
+        <p class="mt-1 text-sm text-gray-500">Check out a few pieces of art that has been commissioned for this novel.</p>
+      </div>
+    </a>
+
+    <a href="#" class="p-3 flex items-start rounded-lg hover:bg-gray-50">
+      <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-green-600 text-white sm:h-12 sm:w-12">
+        <i class="bi bi-book"></i>
+      </div>
+      <div class="ml-4 flex flex-col">
+        <p class="text-base font-medium text-gray-900">Shop</p>
+        <p class="mt-1 text-sm text-gray-500">Purchase your physical, digital, or audiobook version copy. </p>
+      </div>
+    </a>
+
+    <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+      <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-yellow-300 text-white sm:h-12 sm:w-12">
+        <i class="bi bi-phone"></i>
+      </div>
+      <div class="ml-4 flex flex-col">
+        <p class="text-base font-medium text-gray-900">Contact</p>
+        <p class="mt-1 text-sm text-gray-500">Get in touch with the Author/Editor of this story.</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div id="cast" class="target:pt-24 pt-10  mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+  <header class="mb-8">
+    <h2 class="text-base font-semibold tracking-wider text-indigo-600 uppercase">Purchase your copy today!</h2>
+    <p class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">Pilgrimage of Ages: Neo Tula </p>
+    <p class="max-w-prose mx-auto text-xl text-gray-500">The first book of a planned trilogy. Perfect if you enjoy Fantasy, Adventure, Friendship, Anime, Indigenous Culture, or simply want to sink your teeth into something fresh and new.</p>
+  </header>
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <template x-for="item in cast">
+        <div class="bg-indigo-100 p-6 rounded-lg">
+          <img class="h-32 w-32 inline-flex items-center justify-center p-3 bg-indigo-500 rounded-full" :src="'http://pixelprowess.com/i/stargazers/'+ item.slug +'_tn.svg'" :alt="item.name">
+          <h3 class="text-lg font-medium text-gray-900 tracking-tight" x-text="item.name"></h3>
+          <p class="text-base text-gray-500" x-text="item.bio"></p>
+        </div>
+      </template>
+    </div>
+  </div>
+</div>
+
+<footer id="social" class="target:pt-24 mx-auto pt-16 pb-6">
+  <h1 class="text-center font-semibold tracking-wider text-indigo-600 uppercase">Social Media</h1>
+  <div class="mt-6 flex place-content-center gap-6 text-center">
+    <a href="#" class="group text-gray-400">
+      <i class="bi bi-facebook text-2xl"></i>
+      <div class="hidden md:inline ml-1 group-hover:text-indigo-500">Facebook</div>
+    </a>
+    <a href="#" class="text-gray-400">
+      <i class="bi bi-twitter text-2xl"></i>
+      <div class="hidden md:inline ml-1 hover:text-indigo-500">Twitter</div>
+    </a>
+    <a href="#" class="group text-gray-400">
+      <i class="bi bi-youtube text-2xl"></i>
+      <div class="hidden md:inline ml-1 group-hover:text-indigo-500">YouTube</div>
+    </a>
+    <a href="#" class="group text-gray-400">
+      <i class="bi bi-snapchat text-2xl"></i>
+      <div class="hidden md:inline ml-1 group-hover:text-indigo-500">SnapChat</div>
+    </a>
+    <a href="#" class="text-gray-400">
+      <i class="bi bi-instagram text-2xl"></i>
+      <div class="hidden md:inline ml-1 hover:text-indigo-500">Instagram</div>
+    </a>
+    <a href="#" class="text-gray-400">
+      <i class="bi bi-tiktok text-2xl"></i>
+      <div class="hidden md:inline ml-1 hover:text-indigo-500">TikTok</div>
+    </a>
+  </div>
+</footer>
+
+
 
     <script type="module" src="/main.js"></script>
   </body>
